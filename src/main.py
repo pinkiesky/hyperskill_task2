@@ -60,6 +60,7 @@ def metrics():
     """
 
 
+
 @app.route('/metrics/reset')
 def reset_metrics():
     global counter
