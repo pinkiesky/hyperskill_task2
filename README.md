@@ -14,13 +14,19 @@ The shop owner has read a new book about data and metrics and wants to apply new
 
 ### Acceptance Criteria
 
-In main.py file, you should implement two new functions (in our case, let's name its "pages"):
-1. Page that shows the visitors count (check the function at line 41;
+In [main.py](src/main.py) file, you should implement two new functions (in our case, let's name its "pages"):
+1. Page that shows the visitors count (check the function at line 41);
 2. Page that resets the visitors count (check the function at line 50).
 
-The first page should return a simple HTML page consisting of a level one header and div element with text like "Visitor count: n.". Remember that the page should not change the `counter` field.
+The first page should return a simple HTML page consisting of a level one header and div element with text like "Visitor count: n.". 
 
-The second page you are implementing should try to reset the counter (set to 0). If the counter is more than 0, the page should reset it and return an HTML page with the red text "The counter has been reset." If the counter is eq 0, the page should return an HTML page with the text "There is nothing to reset yet!"
+> [!Warning]
+> Remember that the page should not change the `counter` variable.
+
+The second page you are implementing should try to reset the `counter` (set to 0). If the `counter` is more than 0, the page should reset it and return an HTML page with the red text "The `counter` has been reset." If the `counter` is eq 0, the page should return an HTML page with the text "There is nothing to reset yet!"
+
+> [!TIP]
+> Check the index function that is responsible for the index (main) page. You can copy the body of this function in `metrics` or `reset_metrics` and start playing around!
 
 ## How to test the project
 
