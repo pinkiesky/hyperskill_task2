@@ -15,7 +15,7 @@ The shop owner has read a new book about data and metrics and wants to apply new
 ### Acceptance Criteria
 
 In main.py file, you should implement two new functions (in our case, let's name its "pages"):
-1. Page that shows the visitors count (check the function at line 41;
+1. Page that shows the visitors count (check the function at line 41);
 2. Page that resets the visitors count (check the function at line 50).
 
 The first page should return a simple HTML page consisting of a level one header and div element with text like "Visitor count: n.". Remember that the page should not change the `counter` field.
