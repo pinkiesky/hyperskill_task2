@@ -85,13 +85,12 @@ def reset_metrics():
     <!DOCTYPE html>
     <html>
     <head>
-
         <title>Reset Metrics</title>
         <link rel="stylesheet" type="text/css" href="/assets/styles.css">
     </head>
     <body>
         <h1>Reset Metrics</h1>
-        <p>Metrics have been reset.</p>
+        <p class="red">Metrics have been reset.</p>
         <p><a href="/">Back to Product Page</a></p>
     </body>
     </html>
