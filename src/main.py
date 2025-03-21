@@ -5,9 +5,11 @@ app = Flask(__name__)
 # Global counter to track page views
 counter = 0
 
+
 @app.route('/')
 def index():
-    global counter  # This tells Python we are referring to the global variable 'counter' defined outside the function.
+    # This tells Python we are referring to the global variable 'counter' defined outside the function.
+    global counter
     counter += 1
 
     # Using an f-string to embed the counter value directly into the HTML.
@@ -37,6 +39,7 @@ def index():
     """
     return html
 
+
 @app.route('/metrics')
 def metrics():
     # `pass` below is a placeholder for future code.
@@ -45,6 +48,7 @@ def metrics():
     # In this case, it indicates that the function is not yet implemented.
     # Remove `pass` and add your code here when you're ready to implement the page one.
     pass
+
 
 @app.route('/metrics/reset')
 def reset_metrics():
@@ -56,9 +60,12 @@ def reset_metrics():
 # It's a common practice to keep static files in a separate directory for better organization.
 # The send_from_directory function is a Flask utility that safely serves files from a specified directory.
 # It's okay if you don't understand all the details of this function right now
+
+
 @app.route('/assets/<path:filename>')
 def serve_static(filename):
     return send_from_directory('assets', filename)
+
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
